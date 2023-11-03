@@ -1,4 +1,4 @@
-// Import 
+// Import files 
 const express = require('express')
 const app = express()
 const expresslayouts= require('express-ejs-layouts') 
@@ -32,6 +32,7 @@ app.get('/contact', (req, res) =>{
     res.render('contact', { text:'Contact'})
 
 })
+//above are the files with the ejs template and calling it.
 
 //Set the Views 
 app.use(expresslayouts)
